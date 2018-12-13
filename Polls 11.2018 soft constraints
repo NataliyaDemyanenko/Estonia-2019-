@@ -39,11 +39,11 @@ for p in parties:
 
 # Introduce campaign commitments
 friends={}
-friends['A']='A', 'C', 'D', 'F'
+friends['A']='A', 'C', 'D', 'E', 'F'
 friends['B']='B', 'C', 'D', 'E', 'F'
 friends['C']='A', 'B', 'C', 'D', 'F'
 friends['D']='A', 'B', 'C', 'D', 'E', 'F'
-friends['E']='B', 'D', 'E', 'F'
+friends['E']='A', 'B', 'D', 'E', 'F'
 friends['F']='A', 'B', 'C', 'D', 'E', 'F'
 friends['G']='A', 'B', 'C', 'D', 'E', 'F'
 
@@ -98,3 +98,4 @@ for k in chi.keys():
     for i in tuple(k):
         power[i] = chi[k]*sh[i]
     show(k, power, S)
+    
