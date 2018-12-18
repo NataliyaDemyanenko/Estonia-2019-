@@ -15,7 +15,7 @@ for i in range(len(polls)):
 parties=['A','B','C', 'D', 'E', 'F']                      # Initialize parties and coalitions (labelled by letters)
 labels = ['Ref', 'KESK','SDE','I','EKRE', 'E200']
 
-colors = ['red','deepskyblue', 'green', 'orange', 'yellow', 'brown']
+colors = ['orange','brown', 'yellow', 'deepskyblue', 'red', 'green']
 
 label = dict(zip(parties,labels))  
 color = dict(zip(parties,colors))
