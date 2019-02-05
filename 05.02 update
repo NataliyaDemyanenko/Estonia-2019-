@@ -114,6 +114,11 @@ for i in parties:
 plt.xticks(rotation=-20, fontsize=8, horizontalalignment='left')
 plt.show()
 
+show('Minimal winning coalitions and Stability coefficients') 
+show('( Stability = 1 / Sum(Strength) ):')
+
+show(chi)
+
 S = 0    
 for k in letter_function.keys():
     if chi[k] > S:
