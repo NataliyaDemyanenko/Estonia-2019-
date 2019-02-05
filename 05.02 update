@@ -113,3 +113,18 @@ for i in parties:
     plt.bar(label[i], 0.003, bottom = max(0,sh[i]/S), color = 'red', width=0.6, align='center')         
 plt.xticks(rotation=-20, fontsize=8, horizontalalignment='left')
 plt.show()
+
+S = 0    
+for k in letter_function.keys():
+    if chi[k] > S:
+        S = chi[k]
+for k in chi.keys():
+        if chi[k] != S:
+            del letter_function[k]
+show('Stable coalitions and Power distribution') 
+show('( Power = Strength x Stability ):')            
+for k in chi.keys():
+    power={}
+    for i in tuple(k):
+        power[i] = chi[k]*sh[i]
+    show(k, power)
